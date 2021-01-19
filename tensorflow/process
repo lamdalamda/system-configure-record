@@ -1,0 +1,8 @@
+tensorflow
+
+直接pip install tensorflow就行，有错误改错误
+
+tensorflow-cuda：需要找到tensorflow对应的cuda，cudnn
+
+下载下来之后安装，放在环境变量里面，缺什么加什么
+官网版本未必对应，可以看安装后缺少的dll版本
