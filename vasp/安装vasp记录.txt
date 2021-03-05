@@ -42,3 +42,32 @@ centos8 官网下载最新版
 】libintel64没问题
 
 测试通过，vasp成功
+
+wsl
+
+/usr/include/c++/4.4.6/x86_64-redhat-linux丢失。
+
+我做了以下事情：
+
+cd /usr/include/c++/4.4.6/
+mkdir x86_64-redhat-linux
+cd x86_64-redhat-linux
+ln -s ../i686-redhat-linux 32
+
+像这样创建正确的符号链接（不确定f的名称x86_64-redhat-linux）：
+
+cd /usr/include/c++/8
+ln -s i686-redhat-linux x86_64-redhat-linux
+或者
+
+cd /usr/include/c++/8
+ln -s i686-redhat-linux/bits
+但是我希望不会给混合32b / 64b带来错误的定义，在...之后进行一些测试...
+
+
+不行
+
+发现没有32位数据库所以按照网上
+
+
+再安装intel parallel studio时候暂时没有报错说缺少32位库

@@ -1,0 +1,29 @@
+准备intel parallel studio xe 2019 和license文件 （*.lic）
+
+对于centos，不需要再装什么
+对于wsl2 ubuntu1804 
+
+apt-get install build-essential gcc-multilib rpm ia32-libs
+
+ia32-lib会提示已经没了，提示跳转到了另外的库里面，就装上
+另外还有教程照着装了sudo apt-get install libgtk-3-0 libxss1 libnss3 libgtk2.0 libpango-1.0-0 libasound2 
+
+注意报错！！！！！！！
+
+不知道里面具体哪个东西是决定性的
+但是一定要parallel studio不报什么错
+
+安装完了之后root/.bashrc 加上：
+source /opt/intel/parallel_studio_xe_2019/psxevars.sh
+
+再然后cd /opt/intel/compilers_and_libraries_2019.0.117/linux/mkl/interfaces/fftw3xf/
+并且make libintel64
+
+vasp:tar -xzf
+
+在arch里面找.linux_intel，复制出来并删除这个后缀
+然后改：OFLAG      = -O2 -xhost
+
+成功！
+
+然后改bin/vasp_std为vasp（方便
