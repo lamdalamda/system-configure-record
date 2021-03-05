@@ -16,3 +16,4 @@ bios设置：
 尝试把clover放进硬盘里面:
 
 方法，对于目前的GPT硬盘，直接把EFI分区清空之后把200M的clover盘中文件全考进去，重启之后bios可以识别这个uefi并且引导出来就是clover
+ESP:C14D581B
