@@ -74,3 +74,6 @@ Host 192.168.254.128
     IdentityFile "C:\Users\David\.ssh\id_rsa"
 
 成功免密码登录
+
+new:tar
+可以使用ssh-add （即ssh agent）添加私钥，免登录
