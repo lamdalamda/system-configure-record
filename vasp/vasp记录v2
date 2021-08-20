@@ -5,6 +5,10 @@
 
 apt-get install build-essential gcc-multilib rpm ia32-libs
 
+
+#update：
+apt-get install build-essential gcc-multilib rpm lib32ncurses5 lib32z1
+
 ia32-lib会提示已经没了，提示跳转到了另外的库里面，就装上   lib32ncurses5 lib32z1
 
 看起来lib32ncurses5 lib32z1是最重要的
